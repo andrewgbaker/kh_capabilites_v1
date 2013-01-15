@@ -1,0 +1,691 @@
+ @import url(http://fonts.googleapis.com/css?family=Kameron);
+    
+      body {
+        padding-top: 10px;
+        padding-bottom: 40px;
+      }
+      
+      *{
+		margin:0;
+		padding:0;
+		}
+		
+		p {font-size: 14px; line-height: 22px;}
+		
+		.vendor {margin: 20px 0px;}
+		
+		#reel_section {margin-left: 0px;}
+		
+		#word_cloud_wrapper {background-color: #ffffff; margin-left: 0px; margin-top: 20px;}
+		
+		img {border:none;}
+		
+		/*Container for the image frame aka the top image*/
+		.frame{
+		position: absolute;
+		z-index: 3;
+		max-width: 100%;
+		}
+		.frame2{
+		position: absolute;
+		z-index: 4;
+		}
+		.frame3{
+		position: absolute;
+		z-index: 5;
+		}
+		/*The container the character goes in for easy placement*/
+		#header{
+		max-height: 528px;
+		width: 962px;
+		margin: 0px auto;
+		max-width: 100%;
+		}
+		#light{
+		height: 201px;
+		width: 196px;
+		margin: 0px auto;
+		}
+		#services{
+		height: 64px;
+		width: 294px;
+		margin: 15px auto;
+		}
+		#icons{
+		max-height: 64px;
+		width: 566px;
+		margin: 15px auto;
+		max-width: 100%;
+		}
+		#facts{
+		height: 64px;
+		width: 260px;
+		margin: 15px auto;
+		margin-left: 0px;
+		}
+		#people{
+		height: 234px;
+		width: 300px;
+		margin: 15px auto;
+		margin-left: 0px;
+		}
+		#case_studies{
+		height: 64px;
+		width: 335px;
+		margin: 15px auto;
+		margin-left: 0px;
+		}
+		#video{
+		height: 158px;
+		width: 280px;
+		margin: 15px auto;
+		margin-left: 0px;
+		}
+		
+		#word_cloud{
+		max-height: 438px;
+		width: 964px;
+		margin: 0px auto;
+		max-width: 100%;
+		}
+	
+		/*Adds padding around image to make border. Needed only for pngs.*/
+		img.loadpic{
+		margin: 10px;
+		}
+		/*Prevents spillover from middle layer moving up*/
+		#headercontainer{
+		position: relative;
+		overflow: hidden;
+		max-height: 528px;
+		width: 962px;
+		background: #ffffff;
+		max-width: 100%;
+		}
+		#light_container{
+		position: relative;
+		overflow: hidden;
+		height: 201px;
+		width: 196px;
+		background: #ffffff;
+		}
+		#services_container{
+		position: relative;
+		overflow: hidden;
+		height: 64px;
+		width: 294px;
+		background: #f0f0f0;
+		}
+		#icons_container{
+		position: relative;
+		overflow: hidden;
+		max-height: 64px;
+		width: 566px;
+		background: #f0f0f0;
+		max-width: 100%;
+		}
+		#facts_container{
+		position: relative;
+		overflow: hidden;
+		height: 64px;
+		width: 260px;
+		background: #f0f0f0;
+		}
+		#people_container{
+		position: relative;
+		overflow: hidden;
+		height: 234px;
+		width: 300px;
+		background: #cccccc;
+		}
+		#case_studies_container{
+		position: relative;
+		overflow: hidden;
+		height: 64px;
+		width: 335px;
+		background: #f0f0f0;
+		}
+		#video_container{
+		position: relative;
+		overflow: hidden;
+		height: 169px;
+		width: 300px;
+		background: #000000;
+		}
+		#word_cloud_container{
+		position: relative;
+		overflow: hidden;
+		max-height: 438px;
+		width: 964px;
+		background: #ffffff;
+		max-width: 100%;
+		}
+		/*The middle layer container, hiding base image initially*/
+		#headeroverlay{
+		position: absolute;
+		z-index: 1;
+		}
+		#light_overlay{
+		position: absolute;
+		z-index: 2;
+		}
+		#services_overlay{
+		position: absolute;
+		z-index: 2;
+		}
+		#icons_overlay{
+		position: absolute;
+		z-index: 2;
+		}
+		#facts_overlay{
+		position: absolute;
+		z-index: 2;
+		}
+		#people_overlay{
+		position: absolute;
+		z-index: 2;
+		}
+		#people2_overlay{
+		position: absolute;
+		z-index: 2;
+		}
+		#people3_overlay{
+		position: absolute;
+		z-index: 2;
+		}
+		#case_studies_overlay{
+		position: absolute;
+		z-index: 2;
+		}
+		#video_overlay{
+		position: absolute;
+		z-index: 2;
+		}
+		#video2_overlay{
+		position: absolute;
+		z-index: 2;
+		}
+		#video3_overlay{
+		position: absolute;
+		z-index: 2;
+		}
+		#word_cloud_overlay{
+		position: absolute;
+		z-index: 1;
+		}
+		/*White div in #headeroverlay that fill space the edge image doesn't*/
+		#headerblock{
+		height: 528px;
+		width: 962px;
+		background: #FFF;
+		max-width: 100%;
+		}
+		#light_block{
+		height: 201px;
+		width: 196px;
+		background: #FFF;
+		}
+		#services_block{
+		height: 64px;
+		width: 294px;
+		background: #f0f0f0;
+		}
+		#icons_block{
+		height: 64px;
+		width: 566px;
+		background: #f0f0f0;
+		max-width: 100%;
+		}
+		#facts_block{
+		height: 64px;
+		width: 260px;
+		background: #f0f0f0;
+		}
+		#people_block{
+		height: 234px;
+		width: 300px;
+		background: #cccccc;
+		}
+		#case_studies_block{
+		height: 64px;
+		width: 335px;
+		background: #f0f0f0;
+		}
+		#video_block{
+		height: 169px;
+		width: 300px;
+		background: #000000;
+		}
+		#word_cloud_block{
+		height: 438px;
+		width: 964px;
+		background: #FFF;
+		max-width: 100%;
+		}
+		/*Image that adds effect the fill, in this case slanted*/
+		#headeredge{
+		height: 473px;
+		width: 962px;
+		background: url('../img/slash6.png');
+		max-width: 100%;
+		}
+		#light_edge{
+		height: 0px;
+		width: 196px;
+		background: url('../img/slash.png');
+		}
+		#services_edge{
+		height: 0px;
+		width: 196px;
+		background: url('../img/slash.png');
+		}
+		#icons_edge{
+		height: 0px;
+		width: 196px;
+		background: url('../img/slash.png');
+		max-width: 100%;
+		}
+		#facts_edge{
+		height: 0px;
+		width: 196px;
+		background: url('../img/slash.png');
+		}
+		#people_edge{
+		height: 0px;
+		width: 196px;
+		background: url('../img/slash.png');
+		}
+		#case_studies_edge{
+		height: 0px;
+		width: 196px;
+		background: url('../img/slash.png');
+		}
+		#video_edge{
+		height: 0px;
+		width: 196px;
+		background: url('../img/slash.png');
+		}
+		#word_cloud_edge{
+		height: 0px;
+		width: 196px;
+		background: url('../img/slash.png');
+		max-width: 100%;
+		}
+		
+		
+		/*Boostrap over-rides */
+		.hero-unit {
+		    background-color: #FFFFFF;
+		    border-radius: none;
+		    margin-bottom: 30px;
+		    padding: 0px;
+		    max-width: 100%;
+		    max-height: 100%;
+		}
+
+
+
+		/*Content styles */
+		
+		img.facts {width: 300px; height: 234px;}
+		
+		h2.intro {
+		
+		font-family: 'Kameron', serif;
+		text-transform: uppercase;
+		color: #c4262e;
+		font-weight: normal;
+		margin-bottom: 10px;
+		line-height: 27px;
+		}
+		
+		h2.services_header {
+		font-family: 'Kameron', serif;
+		font-weight: normal;
+		border-bottom: 1px solid #999999;
+		padding-bottom: 5px;
+		margin-bottom: 15px;
+		}
+		
+		h2.facts_video_header {
+		font-family: 'Kameron', serif;
+		font-weight: normal;
+		border-bottom: none;
+		padding-bottom: 5px;
+		margin-bottom: 0px;
+		line-height: 22px;
+		}
+		
+		#we_do_that {background: #f0f0f0;}
+		
+		#facts_row {
+		background: #f0f0f0;
+		margin-top: 25px;
+		}
+		
+		#case_studies {
+		background: #f0f0f0;
+		margin-top: 25px;
+		}
+		
+		#case_studies_title {
+		background: #f0f0f0;
+		margin-top: 25px;
+		}
+		
+		#video_holder {
+		background: #f0f0f0;
+		margin-top: 25px;
+		padding: 0px 20px !important;
+		}
+		.container_video {margin-right: 20px;}
+		
+		.cta {width: 197px;}
+		
+		#cta_btn1 {float: left;}
+		
+		#cta_btn2 {float: left; margin-left: 20px;}
+		
+		#cta_btn3 {float: right;}
+		
+		
+		#buttons_row {margin: 0 auto; margin-bottom: 30px; width: 630px;}
+		
+		/* SOCIAL FOOTER LINK STYLES */
+				
+		ul#social_icons {
+			margin: 50px auto; 
+			width: 180px;
+			list-style: none;
+			position: relative;
+			}
+
+		ul#social_icons li {
+			list-style: none;
+			display: inline !important;
+			margin-right: 22px;
+		}
+		
+		li.last {margin-right: 0px !important;}
+		
+		img#full_site_btn {margin: 30px auto; display: block;}
+		
+		img.social {display: inline;}
+		
+		
+		/* RESPONSIVE MEDIA QUERIES */
+		
+		/* MAX WIDTH 970px */
+		
+		@media (max-width: 970px) { 
+		
+		.row {
+			padding: 0 20px;
+			margin-left: 0px !important;
+		}
+		
+		.container_video {margin-right: 0px;}
+		
+		img {width: auto; display: block; margin: 0 auto;}
+		
+		img.facts {width: 525px; height: 409px;}
+		
+		img.video {width: 525px; height: 296px;}
+		
+		#brand_column {width: 240px; float: left;}
+		
+		#advertising_column {width: 240px; float: right;}
+		
+		#design_column {width: 240px; float: left !important; clear: both; }
+		
+		#interactive_column {width: 240px; float: right;}
+		
+		#planning_column {width: 240px; float: left; clear: both ;}
+		
+		
+		#facts{
+		margin: 15px auto;
+		}
+		#case_studies {
+		margin: 15px auto;
+		}
+		#people {
+		margin: 15px auto;
+		}
+		#video {
+		margin: 15px auto;
+		}
+		.span4 p {text-align: center;}
+		
+		.span4 h2 {text-align: center;}
+		
+		/* ANIMATION RESPONSIVE SIZES */
+		
+		#people{
+		height: 409px;
+		width: 525px;
+		margin: 15px auto;
+		}
+		
+		#people_container{
+		position: relative;
+		overflow: hidden;
+		height: 409px;
+		width: 525px;
+		background: #cccccc;
+		}
+		
+		#people_block{
+		height: 409px;
+		width: 525px;
+		background: #cccccc;
+		}
+		
+		#video{
+		height: 296px;
+		width: 525px;
+		margin: 15px auto;
+		}
+		
+		#video_container{
+		position: relative;
+		overflow: hidden;
+		height: 296px;
+		width: 525px;
+		background: #cccccc;
+		}
+		
+		#video_block{
+		height: 296px;
+		width: 525px;
+		background: #cccccc;
+		}
+		
+		
+	}
+	
+	
+			
+		/* RESPONSIVE MEDIA QUERIES */
+		
+		/* MAX WIDTH 650px */
+		
+		@media (max-width: 650px) { 
+		
+		#buttons_row {margin: 0 auto; margin-bottom: 30px; width: 200px;}
+		
+		#cta_btn1 {float: none;}
+		
+		#cta_btn2 {float: none; margin-left: 0px;}
+		
+		#cta_btn3 {float: none;}
+		
+		.cta {margin-bottom: 20px;}
+		
+		#brand_column {width: 200px; float: left;}
+		
+		#advertising_column {width: 200px; float: right;}
+		
+		#design_column {width: 200px; float: left !important; clear: both; }
+		
+		#interactive_column {width: 200px; float: right;}
+		
+		#planning_column {width: 200px; float: left; clear: both ;}
+		
+		}
+		
+
+		/* MAX WIDTH 630px */
+		
+		@media (max-width: 630px) { 
+		
+	
+	#people{
+		height: 327px;
+		width: 420px;
+		margin: 15px auto;
+		}
+		
+		#people_container{
+		position: relative;
+		overflow: hidden;
+		height: 327px;
+		width: 420px;
+		background: #cccccc;
+		}
+		
+		#people_block{
+		height: 327px;
+		width: 420px;
+		background: #cccccc;
+		}
+		
+		img.facts {
+    	height: 327px;
+		width: 420px;
+			}
+			
+		#video{
+		height: 237px;
+		width: 420px;
+		margin: 15px auto;
+		}
+		
+		#video_container{
+		position: relative;
+		overflow: hidden;
+		height: 237px;
+		width: 420px;
+		background: #cccccc;
+		}
+		
+		#video_block{
+		height: 237px;
+		width: 420px;
+		background: #cccccc;
+		}
+		
+
+		img.video {height: 237px; width: 420px;}
+		
+	}
+		
+		
+		
+	
+		/* MAX WIDTH 500px */
+		
+		@media (max-width: 500px) { 
+		
+	
+	#people{
+		height: 234px;
+		width: 300px;
+		margin: 15px auto;
+		}
+		
+		#people_container{
+		position: relative;
+		overflow: hidden;
+		height: 234px;
+		width: 300px;
+		background: #cccccc;
+		}
+		
+		#people_block{
+		height: 234px;
+		width: 300px;
+		background: #cccccc;
+		}
+		
+		#video{
+		height: 169px;
+		width: 300px;
+		margin: 15px auto;
+		}
+		
+		#video_container{
+		position: relative;
+		overflow: hidden;
+		height: 169px;
+		width: 300px;
+		background: #cccccc;
+		}
+		
+		#video_block{
+		height: 169px;
+		width: 300px;
+		background: #cccccc;
+		}
+		
+		img.facts {
+    height: 234px;
+    width: 300px;
+}
+
+		img.video {width: 300px; height: 169px;}
+		
+		#brand_column {float: none; width: 100%;}
+		
+		#advertising_column {float: none; width: 100%;}
+		
+		#design_column {float: none; width: 100%;}
+		
+		#interactive_column {float: none; width: 100%;}
+		
+		#planning_column {float: none; width: 100%;}
+
+	}
+
+	
+	/* MAX WIDTH 400px */
+		
+		@media (max-width: 400px) { 
+		
+		body {padding: 0px !important;}
+		
+		#case_studies{
+		height: 58px;
+		width: 305px;
+		margin: 15px auto;
+		margin-left: 0px;
+		}
+		
+		#case_studies_container{
+		position: relative;
+		overflow: hidden;
+		height: 58px;
+		width: 305px;
+		background: #f0f0f0;
+		}
+		
+		#case_studies_block{
+		height: 58px;
+		width: 305px;
+		background: #f0f0f0;
+		}
+		
+		.row {padding: 0 10px;}
+
+		
+	}
